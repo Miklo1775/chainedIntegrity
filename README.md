@@ -1,38 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Hello, the name given to me at birth is Victor Flores and this is a project called chainedIntegrity!
 
-## Getting Started
+What is chainedIntegrity?
+-The aim or goal of this project is to set a humane standard for the hiring process for the tech industry. In the future, more industries will become supported.
 
-First, run the development server:
+Why do we need a humane standard?
+-I say humane standard because the current hiring process is chaotic. Humans are being filtered out by technology and templates as if we were no different than mindless beings. People sitting comfortably with a nice income are forgetting that they, too, are no different than the people they reject. Rejection left and right with no kind of personal feedback to improve the person that is being rejected. Being rejected because some ATS can't read a document correctly. My vision with this platform is to eliminate the mindless filtering and bring humanity into the industry.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+How did i come up with the name chainedIntegrity? It sounds familiar.
+-Its a play on words with another popular job search site that has great features but lacks humanity and integrity.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+What does integrity have to do with anything?
+-A strong integrity is an important quality that everyone should have. A lof of people have their own simplified definition on what integrity is. Integrity to me means that when your actions follow your words, your words follow your thoughts, your thoughts follow your feelings, and your feelings follow your being, then your integrity is strong...That is a standard that I would like to set for everyone. I have seen countless job ads on multiple search sites and a majority of them are lazily written--Jobs posted as entry level but have qualifications for mid to senior level candidates, start ups posting fake ads just to expose their own job searching platform, exploitation with unpaid internships, and the worst being the constant need to create a million different accounts to apply for a position. Job posters are a reflection of the company. Just like how you can identify a tree by its fruit or leaves or a flower by its petals, one can identify a company by their job posters and job ads. A majority of job postings show me that there is a lack of integrity in the industry and there seems to be nobody doing anything about it.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+All in all, whether this idea comes to fruition by my hands or not, I hope that sometime in the future there is a standard set and that people are seen as the human beings that they are and people treat each other as the human beings that they are.
