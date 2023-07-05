@@ -22,22 +22,22 @@ const SeekerDropdown = ({ closeDropdown, userIn, role }) => {
       )}
       {role === "candidate" && (
         <ul className={classes.seekerDropdownContainer}>
-          <li className={classes.seekerDropdownListContainer}>
+          <li className={classes.seekerDropdownListContainer} onClick={closeDropdown}>
             <Link href="/user-profile">Profile</Link>
           </li>
-          <li className={classes.seekerDropdownListContainer}>
+          <li className={classes.seekerDropdownListContainer} onClick={closeDropdown}>
             <Link href="/jobs">Find a Job</Link>
           </li>
-          <li className={classes.seekerDropdownListContainer}>
+          <li className={classes.seekerDropdownListContainer} onClick={closeDropdown}>
             <Link href="/messages">Messages</Link>
           </li>
-          <li className={classes.seekerDropdownListContainer}>
+          <li className={classes.seekerDropdownListContainer} onClick={closeDropdown}>
             <Link href="/documents">Documents</Link>
           </li>
-          <li className={classes.seekerDropdownListContainer}>
+          <li className={classes.seekerDropdownListContainer} onClick={closeDropdown}>
             <Link href="/application-status">Status</Link>
           </li>
-          <li className={classes.seekerDropdownListContainer}>
+          <li className={classes.seekerDropdownListContainer} onClick={closeDropdown}>
             <Link href="/site-settings">Site Settings</Link>
           </li>
         </ul>

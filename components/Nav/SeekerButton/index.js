@@ -4,8 +4,6 @@ import SeekerDropdown from "./SeekerDropdown";
 import classes from "./SeekerButton.module.css";
 
 const SeekerButton = ({ user, setDropdown, dropdown }) => {
-  const [openDropdown, setOpenDropdown] = useState(false);
-
   const { name, role } = user.user;
 
   const dropDownHandler = () => {

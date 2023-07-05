@@ -10,8 +10,6 @@ const Links = () => {
     return state.user;
   });
 
-  console.log(user);
-
   return (
     <div className={classes.linksContainer}>
       <EmployerButton user={user} setDropdown={setDropdown} dropdown={dropdown} />

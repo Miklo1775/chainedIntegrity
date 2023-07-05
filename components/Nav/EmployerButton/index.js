@@ -3,8 +3,6 @@ import EmployerDropdown from "./EmployerDropdown/EmployerDropdown";
 import classes from "./EmployerButton.module.css";
 
 const EmployerButton = ({ user, setDropdown, dropdown }) => {
-  const [openDropdown, setOpenDropdown] = useState(false);
-
   const { name, role } = user.user;
   const dropdownHandler = () => {
     if (dropdown !== "employer") {
@@ -17,8 +15,6 @@ const EmployerButton = ({ user, setDropdown, dropdown }) => {
   const closeDropdown = () => {
     setDropdown("");
   };
-
-  console.log(dropdown, "dropdown");
 
   return (
     <div className={classes.employerBtnContainer}>
