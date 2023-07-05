@@ -13,11 +13,8 @@ const LoginForm = () => {
 
   const loginFormHandler = (event) => {
     event.preventDefault();
+    console.log(loginData);
   };
-
-  console.log(loginData);
-
-  const inputHandler = (e) => {};
 
   return (
     <div className={classes.loginFormContainer}>
