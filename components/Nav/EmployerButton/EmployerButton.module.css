@@ -1,0 +1,11 @@
+.employerBtnContainer {
+  width: 50%;
+  height: 50px;
+  position: relative;
+}
+
+.employerBtn {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

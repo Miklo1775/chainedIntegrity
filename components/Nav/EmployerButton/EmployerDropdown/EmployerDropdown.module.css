@@ -1,0 +1,15 @@
+.employerDropdownContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #909090;
+  position: absolute;
+}
+
+.employerDropdownListContainer {
+  height: 35px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

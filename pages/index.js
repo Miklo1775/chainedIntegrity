@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
-  return <div>Come back later 😀</div>;
-}
+const home = () => {
+  return <div>Check back later</div>;
+};
+
+export default home;
