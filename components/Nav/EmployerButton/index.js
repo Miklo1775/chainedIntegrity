@@ -1,22 +1,31 @@
 import { useState } from "react";
 import EmployerDropdown from "./EmployerDropdown/EmployerDropdown";
 import classes from "./EmployerButton.module.css";
-const EmployerButton = () => {
+
+const EmployerButton = ({ user, setDropdown, dropdown }) => {
   const [openDropdown, setOpenDropdown] = useState(false);
 
+  const { name, role } = user.user;
   const dropdownHandler = () => {
-    setOpenDropdown(!openDropdown);
+    if (dropdown !== "employer") {
+      setDropdown("employer");
+    } else {
+      setDropdown("");
+    }
   };
+
   const closeDropdown = () => {
-    setOpenDropdown(false);
+    setDropdown("");
   };
+
+  console.log(dropdown, "dropdown");
 
   return (
     <div className={classes.employerBtnContainer}>
       <button className={classes.employerBtn} onClick={dropdownHandler}>
-        Employers
+        {user.userIn && role === "employer" ? `Welcome, ${name}!` : "Employers"}
       </button>
-      {openDropdown && <EmployerDropdown closeDropdown={closeDropdown} />}
+      {dropdown === "employer" && <EmployerDropdown role={role} userIn={user.userIn} closeDropdown={closeDropdown} />}
     </div>
   );
 };

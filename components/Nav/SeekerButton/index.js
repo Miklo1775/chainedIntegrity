@@ -1,22 +1,38 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import SeekerDropdown from "./SeekerDropdown";
 import classes from "./SeekerButton.module.css";
 
-const SeekerButton = () => {
+const SeekerButton = ({ user, setDropdown, dropdown }) => {
   const [openDropdown, setOpenDropdown] = useState(false);
+
+  const { name, role } = user.user;
+
   const dropDownHandler = () => {
-    setOpenDropdown(!openDropdown);
+    if (dropdown !== "candidate") {
+      setDropdown("candidate");
+    } else {
+      setDropdown("");
+    }
   };
 
   const closeDropdown = () => {
-    setOpenDropdown(false);
+    setDropdown("");
   };
+
   return (
     <div className={classes.seekerBtnContainer}>
       <button className={classes.seekerBtn} onClick={dropDownHandler}>
-        Seekers
+        {user.userIn && role === "candidate" ? ` Welcome, ${name}!` : "Seeker"}
       </button>
-      {openDropdown && <SeekerDropdown dropDownHandler={dropDownHandler} closeDropdown={closeDropdown} />}
+      {dropdown === "candidate" && (
+        <SeekerDropdown
+          dropDownHandler={dropDownHandler}
+          closeDropdown={closeDropdown}
+          role={role}
+          userIn={user?.userIn}
+        />
+      )}
     </div>
   );
 };

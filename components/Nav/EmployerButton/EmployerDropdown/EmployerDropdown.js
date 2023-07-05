@@ -1,19 +1,43 @@
 import Link from "next/link";
 import classes from "./EmployerDropdown.module.css";
 
-const EmployerDropdown = ({ closeDropdown }) => {
+const EmployerDropdown = ({ closeDropdown, userIn, role }) => {
+  console.log(role);
   return (
-    <ul className={classes.employerDropdownContainer}>
-      <li className={classes.employerDropdownListContainer} onClick={closeDropdown}>
-        <Link href="/login/employer">Login/SignUp</Link>
-      </li>
-      <li className={classes.employerDropdownListContainer} onClick={closeDropdown}>
-        <Link href="/why-us">Why chainedIntegrity?</Link>
-      </li>
-      <li className={classes.employerDropdownListContainer} onClick={closeDropdown}>
-        <Link href="/suggestions">Suggestions</Link>
-      </li>
-    </ul>
+    <>
+      {role !== "employer" && (
+        <ul className={classes.employerDropdownContainer}>
+          <li className={classes.employerDropdownListContainer} onClick={closeDropdown}>
+            <Link href="/login/employer">Login/SignUp</Link>
+          </li>
+          <li className={classes.employerDropdownListContainer} onClick={closeDropdown}>
+            <Link href="/why-us">Why chainedIntegrity?</Link>
+          </li>
+          <li className={classes.employerDropdownListContainer} onClick={closeDropdown}>
+            <Link href="/suggestions">Suggestions</Link>
+          </li>
+        </ul>
+      )}
+      {userIn && role === "employer" && (
+        <ul className={classes.employerDropdownContainer}>
+          <li className={classes.employerDropdownListContainer}>
+            <Link href="/account-info">Account Info</Link>
+          </li>
+          <li className={classes.employerDropdownListContainer}>
+            <Link href="/company-info">Company Info</Link>
+          </li>
+          <li className={classes.employerDropdownListContainer}>
+            <Link href="/jobs/post-a-job">Post a Job</Link>
+          </li>
+          <li className={classes.employerDropdownListContainer}>
+            <Link href="">Find a Candidate</Link>
+          </li>
+          <li className={classes.employerDropdownListContainer}>
+            <Link href="">Messages</Link>
+          </li>
+        </ul>
+      )}
+    </>
   );
 };
 
