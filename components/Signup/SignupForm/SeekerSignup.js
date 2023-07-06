@@ -1,3 +1,5 @@
+import classes from "./SignupForm.module.css";
+
 const SeekerSignup = ({ setSeekerInfo, seekerInfo }) => {
   const handleInput = (e, input) => {
     switch (input) {
@@ -29,31 +31,31 @@ const SeekerSignup = ({ setSeekerInfo, seekerInfo }) => {
 
   return (
     <>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="fName">First: </label>
         <input type="text" id="fName" onChange={(e) => handleInput(e, "fName")} value={seekerInfo.first} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="mName">Middle: </label>
         <input type="text" id="mName" onChange={(e) => handleInput(e, "mid")} value={seekerInfo.middle} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="lName">Last: </label>
         <input type="text" id="lName" onChange={(e) => handleInput(e, "lName")} value={seekerInfo.last} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="city">City: </label>
         <input type="text" id="city" onChange={(e) => handleInput(e, "city")} value={seekerInfo.city} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="state">State: </label>
         <input type="text" id="state" onChange={(e) => handleInput(e, "state")} value={seekerInfo.state} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="zipcode">Zipcode: </label>
         <input type="text" id="zipcode" onChange={(e) => handleInput(e, "zipcode")} value={seekerInfo.zipcode} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="cEmployer">Current Employer: </label>
         <input
           type="text"

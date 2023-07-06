@@ -1,3 +1,5 @@
+import classes from "./SignupForm.module.css";
+
 const EmployerSignup = ({ setEmployerInfo, employerInfo }) => {
   const handleInput = (e, input) => {
     switch (input) {
@@ -37,35 +39,35 @@ const EmployerSignup = ({ setEmployerInfo, employerInfo }) => {
   };
   return (
     <>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="fName">First: </label>
         <input type="text" id="fName" onChange={(e) => handleInput(e, "fName")} value={employerInfo.first} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="mName">Middle: </label>
         <input type="text" id="mName" onChange={(e) => handleInput(e, "mid")} value={employerInfo.middle} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="lName">Last: </label>
         <input type="text" id="lName" onChange={(e) => handleInput(e, "lName")} value={employerInfo.last} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="city">City: </label>
         <input type="text" id="city" onChange={(e) => handleInput(e, "city")} value={employerInfo.city} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="state">State: </label>
         <input type="text" id="state" onChange={(e) => handleInput(e, "state")} value={employerInfo.state} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="zipcode">Zipcode: </label>
         <input type="text" id="zipcode" onChange={(e) => handleInput(e, "zipcode")} value={employerInfo.zipcode} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="company">Company: </label>
         <input type="text" id="company" onChange={(e) => handleInput(e, "company")} value={employerInfo.company} />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="companyAddress">Company Address: </label>
         <input
           type="text"
@@ -74,7 +76,7 @@ const EmployerSignup = ({ setEmployerInfo, employerInfo }) => {
           value={employerInfo.companyAddress}
         />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="companyEmail">Company Email: </label>
         <input
           type="text"
@@ -83,7 +85,7 @@ const EmployerSignup = ({ setEmployerInfo, employerInfo }) => {
           value={employerInfo.companyEmail}
         />
       </div>
-      <div>
+      <div className={classes.inputContainer}>
         <label htmlFor="companyPhone">Company Phone: </label>
         <input
           type="text"
