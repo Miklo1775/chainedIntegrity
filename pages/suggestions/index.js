@@ -1,5 +1,7 @@
+import SuggestionsComponent from "@/components/Suggestions";
+
 const Suggestions = () => {
-  return <div>Suggestions</div>;
+  return <SuggestionsComponent />;
 };
 
 export default Suggestions;

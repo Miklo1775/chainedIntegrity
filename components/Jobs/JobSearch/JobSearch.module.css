@@ -1,10 +1,11 @@
 .searchContainer {
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 10px;
   border-bottom: 1px solid black;
+  flex-grow: 1;
 }
 
 .searchInputContainer {
@@ -12,4 +13,5 @@
   width: 45%;
   display: flex;
   justify-content: space-evenly;
+  flex-grow: 1;
 }
