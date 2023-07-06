@@ -1,5 +1,5 @@
 import classes from "./Links.module.css";
-import { use, useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import EmployerButton from "../EmployerButton";
 import SeekerButton from "../SeekerButton";
