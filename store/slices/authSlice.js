@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = {
-  userIn: true,
+  userIn: false,
   user: {
-    name: "Miklo",
-    role: "candidate",
+    // name: "Miklo",
+    // role: "candidate",
   },
 };
 
