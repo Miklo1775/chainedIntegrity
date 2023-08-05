@@ -1,4 +1,8 @@
 .displayContainer {
-  border: 5px solid green;
   height: 95%;
+  overflow: scroll;
+}
+
+.displayContainer::-webkit-scrollbar {
+  display: none;
 }
