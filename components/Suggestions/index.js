@@ -1,8 +1,8 @@
 import SuggestionsForm from "./SuggestionsForm";
-
+import classes from "./Suggestions.module.css";
 const SuggestionsComponent = () => {
   return (
-    <div>
+    <div className={classes.suggestionsContainer}>
       <SuggestionsForm />
     </div>
   );

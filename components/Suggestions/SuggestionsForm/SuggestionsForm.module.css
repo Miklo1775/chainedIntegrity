@@ -1,0 +1,14 @@
+.formContainer {
+  display: flex;
+  align-items: center;
+  height: 75%;
+  width: 75%;
+}
+
+.inputContainer {
+  width: 120%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 5px;
+}

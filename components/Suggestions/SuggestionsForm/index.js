@@ -1,19 +1,24 @@
+import classes from "./SuggestionsForm.module.css";
+
 const SuggestionsForm = () => {
   return (
-    <form>
-      <div>
-        <label>Subject</label>
-        <input />
-      </div>
-      <div>
-        <label>Name</label>
-        <input />
-      </div>
-      <div>
-        <label>Improvements:</label>
-        <textarea />
-      </div>
-    </form>
+    <div className={classes.formContainer}>
+      <form>
+        <div className={classes.inputContainer}>
+          <label>Subject</label>
+          <input />
+        </div>
+        <div className={classes.inputContainer}>
+          <label>Name</label>
+          <input />
+        </div>
+        <div className={classes.inputContainer}>
+          <label>Improvements:</label>
+          <textarea />
+        </div>
+        <button>Submit Response</button>
+      </form>
+    </div>
   );
 };
 
